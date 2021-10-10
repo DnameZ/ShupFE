@@ -16,7 +16,6 @@ export const PageButton=styled.div`
     position:absolute;
     box-shadow:${Colors.BoxShadow};
     bottom:50px;
-    display:flex;
     border-radius: 50%;
     width:60%;
     height:30%;
@@ -31,6 +30,30 @@ export const PageButton=styled.div`
     @media screen and (${BreakPoints.mobileLarge}) {
         width:70%;
         height:100%;
+     }
+
+     @media screen and (${BreakPoints.tablet}) {
+        width:40%;
+        height:30%;
+
+        &:hover
+        {
+            transition: all 0.5s ease;
+            width: 55%;
+            height: 40%;
+        }
+     }
+
+     @media screen and (${BreakPoints.desktopLarge}) {
+        width: 20%;
+        height: 35%;
+
+        &:hover
+        {
+            transition: all 0.5s ease;
+            width: 25%;
+            height: 40%;
+        }
      }
    `;
 
