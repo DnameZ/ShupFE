@@ -41,6 +41,7 @@ export const PromoCodeText=styled.h3`
 
 export const Basket=styled.div`
     display:flex;
+    cursor:pointer;
     position:absolute;
     align-self:flex-end;
     justify-content:center;
@@ -53,6 +54,7 @@ export const Basket=styled.div`
 
 export const BasketImage=styled.img`
     overflow: visible;
+    cursor:pointer;
     width: 70%;
     height: 70%;
     @media screen and (${BreakPoints.tablet}) {

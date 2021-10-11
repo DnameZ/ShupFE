@@ -8,7 +8,7 @@ import CheckoutPage from './Pages/CheckoutPage/CheckoutPage';
 function App() {
   return (
     <div className="App">
-      <ShopPage/>
+        <HomePage/>
     </div>
   );
 }

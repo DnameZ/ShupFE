@@ -29,6 +29,17 @@ export const CardsContainer=styled.div`
         row-gap:50px;
         grid-template-rows: repeat(2,1fr);
         grid-template-columns: repeat(2,1fr);
+     }
+     
+     @media screen and (${BreakPoints.desktopLarge}) {
+        align-self:center;
+        margin-top:150px;
+        width:60%;
+        height:80%;
+        column-gap:200px;
+        row-gap:80px;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(4,1fr);
      }`;
 
 export const ToolSection=styled.div`
@@ -36,7 +47,12 @@ export const ToolSection=styled.div`
     position:absolute;
     justify-content:space-evenly;
     width:100%;
-    height:20%;`;
+    height:20%;
+    
+    @media screen and (${BreakPoints.desktopLarge}) {
+        width:50%;
+        height:15%;
+     }`;
 
 export const InputSearch=styled.input`
     display:flex;
@@ -61,6 +77,13 @@ export const InputSearch=styled.input`
         height:20%;
         margin-bottom:20px;
         align-self:flex-end;
+     }
+     
+     @media screen and (${BreakPoints.desktopLarge}) {
+        width:50%;
+        height:30%;
+        margin-bottom:20px;
+        align-self:center;
      }`;
 
 export const HambMenu=styled.img`
@@ -89,6 +112,7 @@ export const PromoCode=styled.div`
     display:none;
 
 @media screen and (${BreakPoints.tablet}) {
+    cursor: pointer;
     display:flex;
     margin-right:5%;
     margin-left:5%;
@@ -100,11 +124,33 @@ export const PromoCode=styled.div`
     width:20%;
     height:80%;
   }
+
+  @media screen and (${BreakPoints.desktopLarge}) {
+    display:flex;
+    cursor:pointer;
+    margin-right:2%;
+    margin-left:2%;
+    justify-content:center;
+    align-items:center;
+    margin-top:1%;
+    box-shadow:${Colors.BoxShadow};
+    border-radius: 50%;
+    width:184px;
+    height:180px;
+
+    &:hover
+    {
+        transition: all 0.5s ease;
+        background-color:${Colors.Hovered};
+    }
+ }
+ 
     `;
 
 
 export const CardsPromoContainer=styled.div`
     display:grid;
+    cursor:pointer;
     grid-template-rows: repeat(3,1fr);
     grid-template-columns: repeat(1,1fr);
     position:absolute;
@@ -112,9 +158,16 @@ export const CardsPromoContainer=styled.div`
     bottom:30%;
     left:25%;
     width:30%;
-    height:70%;`;
+    height:70%;
+    
+    @media screen and (${BreakPoints.desktopLarge}) {
+        bottom:30%;
+        left:10%;
+        width:15%;
+     }`;
 
 export const CardsPromo=styled.div`
+    cursor:pointer;
     &:first-child{ margin: 0;};
     &:last-child {margin-left:40px;};
     display:flex;

@@ -34,11 +34,11 @@ const CheckoutPage = () => {
 
              </CheckoutCard.CreditCardContianer>
 
-             <CheckoutCard.BuyButton>Exit</CheckoutCard.BuyButton>
+             <CheckoutCard.BuyButton>Kupi</CheckoutCard.BuyButton>
 
             </CheckoutCard>
 
-            <CheckoutCard.BuyButton>Kupi</CheckoutCard.BuyButton>
+            <CheckoutCard.BuyButton>Exit</CheckoutCard.BuyButton>
 
 
         </Checkout>

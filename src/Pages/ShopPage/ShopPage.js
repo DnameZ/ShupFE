@@ -21,6 +21,10 @@ import { SideModal } from '../../Components/SideModal/SideModal'
 
 import { Modal } from '../../Components/Modal/Modal'
 
+import { BasketModal } from '../../Components/BasketModal/BasketModal'
+
+import { ItemInBasket,BuyButton,FinalPrice,XButton } from '../BasketPage/BasketPageStyle'
+
 const ShopPage = () => {
     return (
        <Shop>
@@ -63,8 +67,50 @@ const ShopPage = () => {
                     <CardCont.BuyButton>Kupi</CardCont.BuyButton>
                 </CardCont>
 
-                
+                <CardCont>
+                    <CardCont.ItemCard>
+                        
+                    </CardCont.ItemCard>
+                    <CardCont.BuyButton>Kupi</CardCont.BuyButton>
+                </CardCont>
+
+                <CardCont>
+                    <CardCont.ItemCard>
+                        
+                    </CardCont.ItemCard>
+                    <CardCont.BuyButton>Kupi</CardCont.BuyButton>
+                </CardCont>
+
+                <CardCont>
+                    <CardCont.ItemCard>
+                        
+                    </CardCont.ItemCard>
+                    <CardCont.BuyButton>Kupi</CardCont.BuyButton>
+                </CardCont>
+
+                <CardCont>
+                    <CardCont.ItemCard>
+                        
+                    </CardCont.ItemCard>
+                    <CardCont.BuyButton>Kupi</CardCont.BuyButton>
+                </CardCont>
+
+                <CardCont>
+                    <CardCont.ItemCard>
+                        
+                    </CardCont.ItemCard>
+                    <CardCont.BuyButton>Kupi</CardCont.BuyButton>
+                </CardCont>
+
+                <CardCont>
+                    <CardCont.ItemCard>
+                        
+                    </CardCont.ItemCard>
+                    <CardCont.BuyButton>Kupi</CardCont.BuyButton>
+                </CardCont>
+
            </CardsContainer>
+
        </Shop>
     )
 }

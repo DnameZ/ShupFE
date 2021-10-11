@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Colors } from "../../Assets/Lib/generalStyles";
+import { BreakPoints } from "../../Assets/Lib/generalStyles";
 
 
 export const ModalContainer=styled.div`
@@ -21,7 +22,11 @@ export const ModalInput=styled.input`
     border-radius:20px;
     text-align:center;
     width:60%;
-    height:30%;`;
+    height:30%;
+
+    @media screen and (${BreakPoints.desktopLarge}) {
+        width:40%;
+     }`;
 
 export const ButtonModal=styled.button`
     position:absolute;
@@ -34,6 +39,10 @@ export const ButtonModal=styled.button`
     border:none;
     font-size:25px;
     background-color:${Colors.White};
+
+    @media screen and (${BreakPoints.desktopLarge}) {
+        width:30%;
+     }
     
     &:hover
     {

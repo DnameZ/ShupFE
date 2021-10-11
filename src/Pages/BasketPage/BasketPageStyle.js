@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Colors } from "../../Assets/Lib/generalStyles";
+import { BreakPoints } from "../../Assets/Lib/generalStyles";
 
 export const BasketPage=styled.div`
     display:flex;
@@ -12,7 +13,20 @@ export const FinalPrice=styled.h2`
     color:${Colors.White};
     font-size:24px;
     font-weight:bold;
-    text-align:center;`;
+    text-align:center;
+    
+    @media screen and (${BreakPoints.tablet}) {
+       font-size:30px;
+       align-self:flex-end;
+       position:absolute;
+       bottom:15%;
+     }
+     @media screen and (${BreakPoints.desktopLarge}) {
+        font-size:30px;
+        align-self:flex-start;
+        position:absolute;
+        bottom:15%;
+     }`;
 
 export const BasketContainer=styled.div`
     display:grid;
@@ -32,7 +46,12 @@ export const ItemInBasket=styled.div`
     box-shadow:${Colors.ItemCardShadow};
     background-color:${Colors.White};
     width:50%;
-    height:90%;`;
+    height:90%;
+
+    @media screen and (${BreakPoints.tablet}) {
+        width:65%;
+        height:70%;
+     }`;
 
 export const BuyButton=styled.button`
     position:absolute;
@@ -46,6 +65,17 @@ export const BuyButton=styled.button`
     background-color:${Colors.White};
     width:40%;
     height:8%;
+
+    @media screen and (${BreakPoints.tablet}) {
+        width:60%;
+        height:15%;
+        font-size:22px;
+     }
+
+     @media screen and (${BreakPoints.desktopLarge}) {
+        width:30%;
+        font-size:23px;
+     }
     
     &:hover{
         box-shadow:${Colors.BoxShadow};
@@ -61,7 +91,9 @@ export const BuyButton=styled.button`
         transition: all 0.3s ease;
         transform:scale(0.7);
         background-color:${Colors.Pressed};
-    }`;
+    }
+    
+    `;
 
     export const XButton=styled.img`
     align-self:flex-start;

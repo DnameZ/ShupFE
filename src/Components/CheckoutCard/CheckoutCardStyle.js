@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Colors } from "../../Assets/Lib/generalStyles";
+import { BreakPoints } from "../../Assets/Lib/generalStyles";
 
 
 export const CheckoutCardModal=styled.div`
@@ -9,7 +10,14 @@ export const CheckoutCardModal=styled.div`
     border-radius: 20px;
     width:90%;
     height:90%;
-    background-color:${Colors.Pinky};`;
+    background-color:${Colors.Pinky};
+    
+    @media screen and (${BreakPoints.desktopLarge}) {
+        margin-top:0%;
+        align-self:center;
+        width:50%;
+        height:90%;
+     }`;
 
 export const InputInformationContainer=styled.div`
     display:grid;
@@ -17,7 +25,11 @@ export const InputInformationContainer=styled.div`
     grid-template-columns: repeat(1,1fr);
     justify-items:center;
     width:100%;
-    height:40%;`;
+    height:40%;
+    
+    @media screen and (${BreakPoints.desktopLarge}) {
+        width:70%;
+     }`;
 
 export const InputInformation=styled.input`
     align-self:center;
@@ -35,7 +47,11 @@ export const CreditCardContianer=styled.div`
     align-self:flex-end;
     justify-content:center;
     width:90%;
-    height:50%;`
+    height:50%;
+    
+    @media screen and (${BreakPoints.desktopLarge}) {
+        width:30%;
+     }`
 
 export const CreditCardFront=styled.div`
     display:flex;
@@ -119,6 +135,11 @@ export const BuyButton= styled.button`
         transform:scale(0.7);
         background-color:${Colors.Pressed};
     }
+
+    @media screen and (${BreakPoints.desktopLarge}) {
+        width:35%;
+        height:4%;
+     }
     `;
 
 

@@ -16,6 +16,11 @@ export const CardContainer=styled.div`
         width:100%;
         height:100%;
      }
+
+     @media screen and (${BreakPoints.desktopLarge}) {
+        width:100%;
+        height:100%;
+     }
     `;
 
 export const ItemCard=styled.div`
@@ -31,6 +36,11 @@ export const ItemCard=styled.div`
     @media screen and (${BreakPoints.tablet}) {
         width:30%;
         height:25%; 
+     }
+
+     @media screen and (${BreakPoints.desktopLarge}) {
+        width:14%;
+        height:27%; 
      }
     `;
 
@@ -63,4 +73,12 @@ export const BuyButton=styled.button`
         align-self:flex-end;
         width:30%;
         height:7%; 
-     }`;
+     }
+
+     @media screen and (${BreakPoints.desktopLarge}) {
+        align-self:flex-end;
+        width:15%;
+        height:7%; 
+     }
+     `;
+     
