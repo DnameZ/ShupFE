@@ -2,3 +2,12 @@
   text-align: center;
 }
 
+html,body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  overflow-x: hidden; 
+  margin: 0;
+  font-family: 'Lobster Two', cursive;
+}
+

@@ -5,7 +5,13 @@ import { Shop,
          CardsContainer,
          ToolSection,
          InputSearch,
-         HambMenu } from './ShopPageStyle'
+         HambMenu,
+         HeaderNavigation,
+         PromoCode,
+         CardsPromoContainer,
+         CardsPromo } from './ShopPageStyle'
+
+import { PromoCodeText,BasketImage, PromoCodeContainer } from '../../Components/SideModal/SideModalStyle'
 
 import { CardCont } from '../../Components/ItemCard/ItemCard'
 
@@ -18,13 +24,24 @@ import { Modal } from '../../Components/Modal/Modal'
 const ShopPage = () => {
     return (
        <Shop>
+           
+           <HeaderNavigation>
+                <PromoCode>
+                    <PromoCodeText>Promo code</PromoCodeText>
 
-           <ModalBackGround/>
-           <Modal>
-               <Modal.ModalInput placeholder={"Unesite svoj kod ovdje"}/>
+                    <CardsPromoContainer>
+                        <CardsPromo></CardsPromo>
 
-               <Modal.ButtonModal>Dodaj</Modal.ButtonModal>
-           </Modal>
+                        <CardsPromo></CardsPromo>
+
+                        <CardsPromo></CardsPromo>
+                    </CardsPromoContainer>
+                </PromoCode>
+
+                <PromoCode>
+                    <BasketImage src={Images.Basket}/>
+                </PromoCode>
+           </HeaderNavigation>
 
            <ToolSection>     
                 <InputSearch  type="text" placeholder="Unesite traženi pojam"/>
@@ -45,6 +62,8 @@ const ShopPage = () => {
                     </CardCont.ItemCard>
                     <CardCont.BuyButton>Kupi</CardCont.BuyButton>
                 </CardCont>
+
+                
            </CardsContainer>
        </Shop>
     )

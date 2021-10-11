@@ -16,6 +16,7 @@ export const Images={
 
 
 export const Colors={
+    CreditCardFront:"#E0E0E0",
     Pressed:"#FF6BB3",
     Hovered:"#FF1486",
     ItemCardShadow:"-1px 0px 0px 6px rgba(0, 0, 0, 0.25);",
@@ -49,3 +50,8 @@ export const BreakPoints = {
     align-self:center;
     width:20%;
     height:70%;`;
+
+  export const SomeTitle=styled.h3`
+    position:absolute;
+    font-size: 16px;
+    font-weight: 700;`;  

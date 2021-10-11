@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { Colors } from "../../Assets/Lib/generalStyles";
+import { Colors,BreakPoints } from "../../Assets/Lib/generalStyles";
+
 
 
 
@@ -31,7 +32,11 @@ export const PromoCodeText=styled.h3`
     color:${Colors.Pinky};
     font-weight:bold;
     text-align:center;
-    font-size:16px;`;
+    font-size:16px;
+    
+    @media screen and (${BreakPoints.tablet}) {
+        font-size:20px;
+     }`;
 
 
 export const Basket=styled.div`
@@ -49,7 +54,11 @@ export const Basket=styled.div`
 export const BasketImage=styled.img`
     overflow: visible;
     width: 70%;
-    height: 70%;`;
+    height: 70%;
+    @media screen and (${BreakPoints.tablet}) {
+        width: 80%;
+        height: 80%;
+     }`;
 
 export const PromoCodeContainer=styled.div`
     display:grid;
