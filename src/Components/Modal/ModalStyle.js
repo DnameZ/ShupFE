@@ -1,9 +1,11 @@
 import styled from "styled-components";
 import { Colors } from "../../Assets/Lib/generalStyles";
 import { BreakPoints } from "../../Assets/Lib/generalStyles";
+import { motion } from "framer-motion";
 
 
-export const ModalContainer=styled.div`
+
+export const ModalContainer=styled(motion.div)`
     display:flex;
     justify-content:center;
     position:absolute;

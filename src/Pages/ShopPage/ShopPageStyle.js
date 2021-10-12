@@ -1,9 +1,9 @@
 import styled  from "styled-components";
 import { Colors } from "../../Assets/Lib/generalStyles";
-
+import { motion } from "framer-motion";
 import { BreakPoints } from "../../Assets/Lib/generalStyles";
 
-export const Shop=styled.div`
+export const Shop=styled(motion.div)`
     display:flex;
     background-color:${Colors.White};
     justify-content:center;

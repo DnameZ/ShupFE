@@ -4,8 +4,15 @@ import { ModalContainer,ModalInput,ButtonModal } from './ModalStyle'
 
 
 export function Modal({classes,children,...restProps}){
+
+    const ModalTransiton=({
+        ins:{y:0,transition:{type:"spring",delay:0,stiffness: 500,damping: 60,mass: 1}},
+        outs:{y:"-100vw"}
+    })
+
     return(
-        <ModalContainer className={classNames("Modal",classes)} {...restProps}>
+        <ModalContainer variants={ModalTransiton} initial={ModalTransiton.outs} 
+        animate={ModalTransiton.ins} exit={ModalTransiton.outs} className={classNames("Modal",classes)} {...restProps}>
             {children}
         </ModalContainer>
     )
