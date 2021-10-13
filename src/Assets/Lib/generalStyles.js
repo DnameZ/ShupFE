@@ -2,6 +2,7 @@ import DecorationPhoto from "../Images/Open.png";
 import BasketPhoto from "../Images/ShopingBasket.png";
 import HambMenuPhoto from "../Images/hambmenu.png";
 import XbuttonPhoto from "../Images/xPinkButton.png";
+import PricePhoto from "../Images/Price.png";
 
 import styled from "styled-components";
 
@@ -11,7 +12,8 @@ export const Images={
     XButton:`${XbuttonPhoto}`,
     HambMenu:`${HambMenuPhoto}`,
     Basket:`${BasketPhoto}`,
-    Decoration:`${DecorationPhoto}`
+    Decoration:`${DecorationPhoto}`,
+    Price:`${PricePhoto}`
 }
 
 

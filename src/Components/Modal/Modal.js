@@ -18,9 +18,9 @@ export function Modal({classes,children,...restProps}){
     )
 }
 
-Modal.ModalInput = function ModalInputs({classes,placeholder,...restProps}){
+Modal.ModalInput = function ModalInputs({classes,placeholder,value,func,...restProps}){
     return(
-        <ModalInput placeholder={placeholder} className={classNames("ModalInputs",classes)} {...restProps}/>
+        <ModalInput value={value} onChange={func} placeholder={placeholder} className={classNames("ModalInputs",classes)} {...restProps}/>
     )
 }
 

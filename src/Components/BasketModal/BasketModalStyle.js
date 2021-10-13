@@ -1,8 +1,9 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 import { Colors,BreakPoints } from "../../Assets/Lib/generalStyles";
 
-export const ModalContainerBasket=styled.div`
+export const ModalContainerBasket=styled(motion.div)`
     display:flex;
     align-self:flex-end;
     justify-content:center;

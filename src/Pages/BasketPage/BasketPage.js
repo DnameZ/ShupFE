@@ -6,7 +6,8 @@ import { BasketPage as BasketPageComp,
          BasketContainer,
          ItemInBasket,
          BuyButton,
-         XButton  } from './BasketPageStyle'
+         XButton,
+         NameOfItem  } from './BasketPageStyle'
 
 import { Images  } from '../../Assets/Lib/generalStyles'
 

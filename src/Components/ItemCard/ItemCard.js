@@ -1,6 +1,6 @@
 import React from 'react'
 import classNames from "classnames";
-import { CardContainer,BuyButton,ItemCard } from './ItemCardStyle';
+import { CardContainer,BuyButton,ItemCard,Price,PriceNummber,NameOfItem } from './ItemCardStyle';
 
 
 export function CardCont({classes,children,...restProps}){
@@ -17,8 +17,28 @@ CardCont.ItemCard= function ItemCardy({classes,children,...restProps}){
     )
 }
 
-CardCont.BuyButton= function BuyiButton({children,classes,...restProps}){
+CardCont.BuyButton= function BuyiButton({children,func,classes,...restProps}){
     return(
-        <BuyButton className={classNames("ButtonBuy",classes)} {...restProps}>{children}</BuyButton>
+        <BuyButton onClick={()=>func()} className={classNames("ButtonBuy",classes)} {...restProps}>{children}</BuyButton>
     )
 }
+
+CardCont.Price= function Prices({src,...restProps}){
+    return(
+        <Price src={src} {...restProps}/>
+    )
+}
+
+CardCont.PriceNummber= function PriceNum({children,classes,...restProps}){
+    return(
+        <PriceNummber className={classNames("PriceNum",classes)} {...restProps}>{children}</PriceNummber>
+    )
+}
+
+CardCont.NameOfItem= function Names({children,classes,...restProps}){
+    return(
+        <NameOfItem className={classNames("Names",classes)} {...restProps}>{children}</NameOfItem>
+    )
+}
+
+

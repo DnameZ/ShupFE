@@ -41,7 +41,7 @@ export const BasketContainer=styled.div`
 
 export const ItemInBasket=styled.div`
     display:flex;
-    justify-content:flex-end;
+    justify-content:center;
     border-radius:10px;
     box-shadow:${Colors.ItemCardShadow};
     background-color:${Colors.White};
@@ -96,6 +96,13 @@ export const BuyButton=styled.button`
     `;
 
     export const XButton=styled.img`
+    cursor:pointer;
     align-self:flex-start;
     width:30%;
     height:20%;`;
+
+    export const NameOfItem=styled.h3`
+    position:absolute;
+    align-self:center;
+    color:${Colors.Pinky};
+    font-size:15px;`

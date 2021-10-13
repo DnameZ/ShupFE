@@ -171,11 +171,15 @@ export const CardsPromo=styled.div`
     &:first-child{ margin: 0;};
     &:last-child {margin-left:40px;};
     display:flex;
+    justify-content:center;
     margin-left:20px;
     border-radius:30px;
     flex-wrap:wrap;
     width:70%;
-    height:70%;
+    height:90%;
     background-color:${Colors.Pinky};`;
+
+export const CardCode=styled.h4`
+    font-size:14px;`;
 
 

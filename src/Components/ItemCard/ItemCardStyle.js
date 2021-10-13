@@ -25,6 +25,7 @@ export const CardContainer=styled.div`
 
 export const ItemCard=styled.div`
     display:flex;
+    justify-content:flex-end;
     position:absolute;
     width:60%;
     height:35%;
@@ -81,4 +82,71 @@ export const BuyButton=styled.button`
         height:7%; 
      }
      `;
+
+     export const Price=styled.img` 
+        position:absolute;
+        bottom:80%;
+        left:80%;
+        height:80px;
+
+        @media screen and (${BreakPoints.tablet}) {
+            bottom:70%;
+            left:80%;
+            height:100px;
+         }
+
+         @media screen and (${BreakPoints.desktop}) {
+            bottom:70%;
+            left:80%;
+            height:130px;
+         }
+        
+        @media screen and (${BreakPoints.desktopLarge}) {
+            bottom:200px;
+            left:190px;
+            height:130px;
+         }`;
+
+    export const PriceNummber=styled.h3`
+        position:absolute;
+        left:91%;
+        bottom:87%;
+        z-index:1;
+        font-size:80%;
+        color:${Colors.White};
+
+        @media screen and (${BreakPoints.tablet}) {
+            font-size:18px;
+            left:91%;
+            bottom:78%;
+          }
+
+          @media screen and (${BreakPoints.desktop}) {
+            font-size:25px;
+            left:91%;
+            bottom:78%;
+          }
+
+        @media screen and (${BreakPoints.desktopLarge}) {
+           font-size:28px;
+           left:215px;
+           bottom:220px;
+         }
+        `;
+
+    export const NameOfItem=styled.h2`
+        position:absolute;
+        right:15%;
+        color:${Colors.White};
+        font-size:30px;
+        align-self:center;
+
+        @media screen and (${BreakPoints.desktop}) {
+            right:25%;
+          }
+        
+        @media screen and (${BreakPoints.desktopLarge}) {
+            right:20%;
+          }`;
+        
      
